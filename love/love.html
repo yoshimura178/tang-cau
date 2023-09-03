@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="love.css">
-    <title>Love</title>
+    <title>Love you</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -13,9 +13,6 @@
         <div class="formInput">
             
             <div class="boxHands">
-                <div class="handsCat">
-                    <img src="../image/handsCat.png" alt="">
-                </div>
                 <h1>Welcome</h1>
             </div>
             <div class="boxSlider">
@@ -23,22 +20,14 @@
                         <div class="slider">
                             <img src="../image/love1.jfif" alt="">
                         </div>
-                        <div class="slider">
-                            <img src="../image/love2.png" alt="">
-                        </div>
                     </div>
                 <div class="left">
-                    <i class="fa-solid fa-chevron-left"></i>
                 </div>
                 <div class="right">
-                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
             <div class="boxHandsInput">
-                <div class="handsCatImgInput">
-                    <img src="../image/handsCat.png" alt="">
-                </div>
-                <input type="text" id="inputField" placeholder="......" readonly>
+                <input type="text" id="inputField" placeholder="Người gửi" readonly>
             </div>
             <div class="buttonLove">
                 <div class="cricleBtn"></div>
@@ -92,11 +81,6 @@
                 </div>
                 
                 <div class="wrapperLetter">
-                    <div class="giftbox">
-                        <div class="img">
-                            <img src="../image/giftbox.png" alt="">
-                        </div>
-                    </div>
                     <div class="textLetter">
                         <h2></h2>
                         <p class="contentLetter"></p>
@@ -171,7 +155,7 @@
     }
 
     const inputField = document.getElementById('inputField');
-    const textToType = "From Ka";
+    const textToType = "Lê Hoàng";
     const typingSpeed = 100; // milliseconds per character
 
     let charIndex = 0;
@@ -215,7 +199,7 @@
     // .textLetter text h2
     let indexText = 0;
     let textLetter = document.querySelector('.textLetter h2');
-    const textLetterH2 = "Gửi C";
+    const textLetterH2 = "Gửi người ấy";
     let timoutTextLetter;
 
     function textCharLetter(){
@@ -243,7 +227,7 @@
     // chữ của thư bạn muốn gửi
     let indexTextContent = 1;
     let textLetterContent = document.querySelector('.contentLetter');
-    const textLetterP = "Gay vl";
+    const textLetterP = "Tôi yêu người ấy bằng thứ tình cảm chân thành nhất, chỉ cần người ấy không buông tay thì dù trái đất này có ngừng quay tôi cũng không bao giờ buông tay người ấy.";
     let timoutTextLetterContent;
     function textCharLetterContent(){
         if (indexTextContent < textLetterP.length) {
